@@ -33,6 +33,26 @@ function createPerson(name, age, location) {
       age: age,
       location: location
     };
+    
+    
+/*the Nigerian poll scenario, Using any of the enumeration methods taught in class (for…in  or for..of), log out each of the presidential candidates in this format:
+	’Omoyele Sowore is the presidential candidate of AAC’
+*/
+
+const presidentialCandidates = {
+    AAC: 'Omoyele Sowore',
+    ACCORD: 'Christopher Imumolen',
+    APC: 'Bola Ahmed Tinubu',
+    LP: 'Peter Obi',
+    NNPP: 'Rabiu Kwankwaso',
+    PDP: 'Atiku Abubakar',
+ };
+ 
+ for (let party in presidentialCandidates) {
+   console.log(`${presidentialCandidates[party]} is the presidential candidate of ${party}`);
+ }
+     
+    
   }
 
   
